@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+body {
+    background-color: #495a75;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: rgb(37, 127, 211);
+    padding: 1em;
+    text-align: center;
+}
+
+/* beginning of grid */
+#container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1em; 
+}
+
+.square {
+    margin: 1.66%; /* 21px */
+    background-color: purple;
+    flex-basis: 30%;
+    padding-bottom: 30%;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: .7s all;
+    -webkit-transition: .7s all;
+    -moz-transition: .7s all;
+}
+/* end of grid */
+
+/* used by the js code to add opacity to the wrong square when it is clicked */
+.fade {
+    opacity: .2;
+}
+
+#colorDisplay {
+    color: #ffffff;
+    font-size: 2em;
+    display: block;
+    padding: .2em;
+}
+
+#message {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    /* background-color: black; */
+    /* color: black; */
+}
+
+.game-menu {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#new-color {
+    padding: .4em;
+}
+
+#new-color:active {
+    background-color: rgb(37, 127, 211);
+    color: #ffffff;
+}
+
+#easy {
+    padding: .4em;
+    margin-right: -3px;
+}
+
+#hard {
+    padding: .4em;
+}
+
+.difficult-style {
+    background-color: rgb(37, 127, 211);
+    color: #ffffff;
+    transition: .7s all;
+}
+
+button {
+    color: rgb(37, 127, 211);
+    font-weight: 700;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none; /* remove the line around the buttons when it is clicked */
+    transition: .8s all;
+    -webkit-transition: .8s all;
+    -moz-transition: .8s all;
+}
+
+button:hover {
+    background: rgb(37, 127, 211);
+    color: #ffffff;
+}
+
+span {
+    font-weight: 700;
+}
